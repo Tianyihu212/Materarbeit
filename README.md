@@ -1,2 +1,2 @@
 # Materarbeit
-Image retrieval
+Landmark retrieval
