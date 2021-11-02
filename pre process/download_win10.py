@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jun 17 15:34:16 2021
-
-@author: Joachim
+Created on Tianyi Hu
 """
 
 import os
