@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Wed Aug  4 16:36:07 2021
-
-@author: mac
+Created on Tinayi Hu
 """
 from PIL import Image
 from PIL.ExifTags import TAGS 
