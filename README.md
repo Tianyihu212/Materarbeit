@@ -14,3 +14,21 @@ RQ1 I downloaded the data set of the [Google landmark dataset](https://github.co
 <br/>
 RQ2 see figure <br/>
 ![Aaron Swartz](https://github.com/Tianyihu212/Materarbeit/raw/main/framework.png)
+```
+Overview of the framework pipeline:
+1. Ranking uses global feature from query image and document image. 
+2. Global feature use Siamese neutral network for training. 
+3. I use Resnet 50 to extract the global feature and contractive loss function as loss function. 
+4. The sift algorithm extracts the local features of the image.
+5. Euclidean metric as re ranking methode
+6. The final Result Re-ranking outputs the top 10 landmark images.
+```
+## Contents
+* [Installation](#installation)
+* [Dataset](#dataset)
+* [Models](#models)
+* [Train](#train)
+* [Evaluate](#evaluate)
+
+## Installation
+If you don't have a GPU, you can simply train the small landmark dataset(Oxford5k order Paris6k data set) model through colab.
