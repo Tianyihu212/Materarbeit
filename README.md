@@ -13,3 +13,4 @@ The research points of this paper are divided into 4 points in total: <br/>
 RQ1 I downloaded the data set of the [kaggle competition](, and deeply analyzed the number of noise images in the data set, the gray-scale images in the data set, the number of images in each category, the shooting time of each image, exif information, etc. In-depth analysis. The relevant code is in the download_mac folder. <br/>
 <br/>
 RQ2 see figure <br/>
+![Aaron Swartz](
