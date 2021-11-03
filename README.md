@@ -31,4 +31,4 @@ Overview of the framework pipeline:
 * [Evaluate](#evaluate)
 
 ## Installation
-If you don't have a GPU, you can simply [train]() the small landmark dataset(Oxford5k order Paris6k data set) model through colab.
+If you don't have a GPU, you can simply [train](https://github.com/Tianyihu212/Materarbeit/raw/main/train_model_code/latest_ipynb_load_renew.py) the small landmark dataset([Oxford5k](https://paperswithcode.com/dataset/oxford5k) order [Paris6k](https://paperswithcode.com/sota/image-retrieval-on-paris6k) data set) model through colab.
