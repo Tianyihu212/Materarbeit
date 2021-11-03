@@ -6,3 +6,4 @@ jina.ai is a very powerful retrieval framework, which can help me to achieve vis
 I divide inference into three stages. The first is the data set preprocess. The second is to read the model and embedding of the model. 
 Finally, the feature index of the data set is placed on the local computer and then the image features are input to annoy for fast retrieval. 
 The figure below is the flow chart for realizing jina.ai
+![Aaron Swartz]()
