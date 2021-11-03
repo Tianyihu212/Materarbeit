@@ -31,4 +31,4 @@ Overview of the framework pipeline:
 * [Evaluate](#evaluate)
 
 ## Installation
-If you don't have a GPU, you can simply train the small landmark dataset(Oxford5k order Paris6k data set) model through colab.
+If you don't have a GPU, you can simply [train]() the small landmark dataset(Oxford5k order Paris6k data set) model through colab.
