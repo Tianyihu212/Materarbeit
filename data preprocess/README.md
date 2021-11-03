@@ -1,6 +1,3 @@
 # Here description all folders.
-How can i download the GLD-v2 dataset.
-How can i category the GLD-v2 dataset.
-How can i caompress the dataset.
-EXIF information about GLD-v2 dataset.
-Geryscle image in the GLD-v2 dataset.
+Download_mac.py introduce the how can i download the GLD_v2 data set im offical web.
+Exif_1.py introduce 
