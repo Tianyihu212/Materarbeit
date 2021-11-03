@@ -8,4 +8,4 @@ Get_gps_information.py introduce how to get landmark-related longitude and latit
 <br/>
 Get_coutry_name.py introduce how to get landmark country name from gps information. <br/>
 <br/>
-Image_compress_1.py introduce how to make image to 224*224 piel.
+Image_compress_1.py introduce how to make image to 224*224 pixel.
