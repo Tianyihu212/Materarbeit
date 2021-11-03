@@ -1,0 +1,8 @@
+jina
+torchvision
+opencv-python
+pandas
+boto3
+fsspec
+s3fs
+git+https://github.com/jina-ai/jina-commons
