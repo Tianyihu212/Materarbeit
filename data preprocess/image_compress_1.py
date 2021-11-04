@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Tianyi Hu
+This file is used to compress image to certain size
 """
 import pandas as pd
 import numpy as np
