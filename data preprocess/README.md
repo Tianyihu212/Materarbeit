@@ -1,4 +1,4 @@
-# Here description all folders.
+# Here description of all folders.
 Download_mac.py introduce the how can i download the GLD_v2 data set im [offical web](https://github.com/cvdfoundation/google-landmark). <br/>
 <br/>
 Exif_1.py introduces extract's EXIF information of the image, including storage location, Shooting time, date, shooting focal length, camera exposure, and other information. <br/>
