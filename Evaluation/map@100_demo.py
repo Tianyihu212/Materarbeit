@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-
+"""
+Here is a easy demo for map@100
+"""
 import numpy as np
 
 def map_at_k(y_true, y_pred):
