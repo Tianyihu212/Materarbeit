@@ -34,6 +34,6 @@ def map_at_k(y_true, y_pred):
     return np.mean((cumsum_mat / arange_mat) * is_correct_mat)
 
 # Demo
-a= np.array([[1,np.nan],[4,5]])
-b= np.array([[3,4,6,3,1],[4,5,4,5,4]])
-print(map_at_k(a, b))
+# a= np.array([[1,np.nan],[4,5]])
+# b= np.array([[3,4,6,3,1],[4,5,4,5,4]])
+# print(map_at_k(a, b)) # Output=0.175
