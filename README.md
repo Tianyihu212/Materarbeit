@@ -47,6 +47,6 @@ Problem : The GLD-v2 data set cannot be used to retrieve most similar landmarks 
 Transfer learning EfficientNet B0 from ImageNet to GLDV2 dataset with classification top, use conv layer as feature extractor, evaluate with mAP@100 on retrieval task. <br/>
 Finetured the Efficiment model from GLD-v2 dataset. <br/>
 In this way, the model is more suitable for the GLD-v2 data set. <br/>
-Problem: Train network will underfitting. Because the GLD-v2 dataset has 8132 categories but a few images per category.
+Problem: Train network will overfitting. Because the GLD-v2 dataset has 8132 categories but a few images per category.
 ### Experiment 4
 Siamese network (metric learning) with batch-wise pos/negative mining (all possible pairs within a batch), transfered weights from experiment 2 on GLD-v2 dataset, contrastive loss, evaluate with mAP@100 on retrieval task.
