@@ -37,7 +37,7 @@ If you don't have a GPU, you can simply [train](https://github.com/Tianyihu212/M
 ## Quickstart
 
 ## Train
-In my training process. I will compare the result of 3 experiments from Transfer learning.
+In my training process. I will compare the result of 4 experiments from Transfer learning.
 ### Experiment 1
 Pre-trained EfficientNet B0 as feature extractor. <br/>
 <br/>
