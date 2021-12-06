@@ -52,7 +52,7 @@ Problem : The GLD-v2 data set cannot be used to retrieve most similar landmarks 
 ### Experiment 2
 Transfer learning EfficientNet B0 from ImageNet to GLDV2 dataset with classification top, use conv layer as feature extractor, evaluate with mAP@100 on retrieval task. <br/>
 <br/>
-Finetured the Efficiment model from GLD-v2 dataset. <br/>
+Finetured the Efficient model from GLD-v2 dataset. <br/>
 <br/>
 In this way, the model is more suitable for the GLD-v2 data set. <br/>
 <br/>
