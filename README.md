@@ -56,7 +56,7 @@ Finetured the Efficient model from GLD-v2 dataset. <br/>
 <br/>
 In this way, the model is more suitable for the GLD-v2 data set. <br/>
 <br/>
-Problem: Train network will overfitting. Because the GLD-v2 dataset has 8132 categories but a few images per category. <br/>
+Problem: Train network will overfitting. Because the GLD-v2 dataset has 81313 categories but a few images per category. <br/>
 <br/>
 ![Aaron Swartz](https://github.com/Tianyihu212/Materarbeit/blob/main/E2_framework.png)
 <br/>
