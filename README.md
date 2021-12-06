@@ -40,13 +40,21 @@ If you don't have a GPU, you can simply [train](https://github.com/Tianyihu212/M
 In my training process. I will compare the result of 3 experiments from Transfer learning.
 ### Experiment 1
 Pre-trained EfficientNet B0 as feature extractor. <br/>
+<br/>
 Using pre-trained model in GLD-v2 index dataset(10w) and test dataset(1000) extracted global features from the two datasets. <br/>
+<br/>
 Evaluate with mAP@100 on retrieval task as baseline. <br/>
+<br/>
 Problem : The GLD-v2 data set cannot be used to retrieve most similar landmarks without training models. Only the features learned on the IMAGE-NET dataset can be retrieved.
 ### Experiment 2
 Transfer learning EfficientNet B0 from ImageNet to GLDV2 dataset with classification top, use conv layer as feature extractor, evaluate with mAP@100 on retrieval task. <br/>
+<br/>
 Finetured the Efficiment model from GLD-v2 dataset. <br/>
+<br/>
 In this way, the model is more suitable for the GLD-v2 data set. <br/>
+<br/>
 Problem: Train network will overfitting. Because the GLD-v2 dataset has 8132 categories but a few images per category.
+### Experiment 3
+Siamese network (metric learning) with batch-wise pos/negative mining (all possible pairs within a batch), transfered weights from pre-trianed weights on ImageNet, contrastive loss, evaluate with mAP@100 on retrieval task.<br/>
 ### Experiment 4
-Siamese network (metric learning) with batch-wise pos/negative mining (all possible pairs within a batch), transfered weights from experiment 2 on GLD-v2 dataset, contrastive loss, evaluate with mAP@100 on retrieval task.
+Siamese network (metric learning) with batch-wise pos/negative mining (all possible pairs within a batch), transfered weights from experiment 2 on GLD-v2 dataset, contrastive loss, evaluate with mAP@100 on retrieval task.<br/>
