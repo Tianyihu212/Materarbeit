@@ -62,4 +62,6 @@ Siamese network (metric learning) with batch-wise pos/negative mining (all possi
 
 ### Experiment 4
 Siamese network (metric learning) with batch-wise pos/negative mining (all possible pairs within a batch), transfered weights from experiment 2 on GLD-v2 dataset, contrastive loss, evaluate with mAP@100 on retrieval task.<br/>
+<br/>
+![Aaron Swartz](https://github.com/Tianyihu212/Materarbeit/blob/main/E4_framework.png)
 
