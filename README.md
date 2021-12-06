@@ -46,7 +46,8 @@ Using pre-trained model in GLD-v2 index dataset(10w) and test dataset(1000) extr
 <br/>
 Evaluate with mAP@100 on retrieval task as baseline. <br/>
 <br/>
-Problem : The GLD-v2 data set cannot be used to retrieve most similar landmarks without training models. Only the features learned on the IMAGE-NET dataset can be retrieved. <br/>
+Problem : The GLD-v2 dataset is not suitable for pre-trained trained models im Image_Net dataset. Only the features learned on the IMAGE-NET dataset can be retrieved.
+For example: The architecture of the horse in the dataset can be found. <br/>
 ![Aaron Swartz](https://github.com/Tianyihu212/Materarbeit/blob/main/E1_framwork.png)
 <br/>
 ### Experiment 2
@@ -61,7 +62,7 @@ Problem: Train network will overfitting. Because the GLD-v2 dataset has 81313 ca
 ![Aaron Swartz](https://github.com/Tianyihu212/Materarbeit/blob/main/E2_framework.png)
 <br/>
 ### Experiment 3
-Siamese network (metric learning) with batch-wise pos/negative mining (all possible pairs within a batch), transfered weights from pre-trianed weights on ImageNet, contrastive loss, evaluate with mAP@100 on retrieval task.<br/>
+Siamese network (metric learning) with batch-wise pos/negative mining (all possible pairs within a batch), transfered weights from pre-trianed weights on Image Net, contrastive loss, evaluate with mAP@100 on retrieval task.<br/>
 <br/>
 ![Aaron Swartz](https://github.com/Tianyihu212/Materarbeit/blob/main/E3_framwork.png)
 <br/>
