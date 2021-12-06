@@ -38,6 +38,7 @@ If you don't have a GPU, you can simply [train](https://github.com/Tianyihu212/M
 
 ## Train
 In my training process. I will compare the result of 4 experiments from Transfer learning.
+<br/>
 ### Experiment 1
 Pre-trained EfficientNet B0 as feature extractor. <br/>
 <br/>
@@ -47,6 +48,7 @@ Evaluate with mAP@100 on retrieval task as baseline. <br/>
 <br/>
 Problem : The GLD-v2 data set cannot be used to retrieve most similar landmarks without training models. Only the features learned on the IMAGE-NET dataset can be retrieved. <br/>
 ![Aaron Swartz](https://github.com/Tianyihu212/Materarbeit/blob/main/E1_framwork.png)
+<br/>
 ### Experiment 2
 Transfer learning EfficientNet B0 from ImageNet to GLDV2 dataset with classification top, use conv layer as feature extractor, evaluate with mAP@100 on retrieval task. <br/>
 <br/>
@@ -57,9 +59,12 @@ In this way, the model is more suitable for the GLD-v2 data set. <br/>
 Problem: Train network will overfitting. Because the GLD-v2 dataset has 8132 categories but a few images per category. <br/>
 <br/>
 ![Aaron Swartz](https://github.com/Tianyihu212/Materarbeit/blob/main/E2_framework.png)
+<br/>
 ### Experiment 3
 Siamese network (metric learning) with batch-wise pos/negative mining (all possible pairs within a batch), transfered weights from pre-trianed weights on ImageNet, contrastive loss, evaluate with mAP@100 on retrieval task.<br/>
-
+<br/>
+![Aaron Swartz](https://github.com/Tianyihu212/Materarbeit/blob/main/E3_framwork.png)
+<br/>
 ### Experiment 4
 Siamese network (metric learning) with batch-wise pos/negative mining (all possible pairs within a batch), transfered weights from experiment 2 on GLD-v2 dataset, contrastive loss, evaluate with mAP@100 on retrieval task.<br/>
 <br/>
