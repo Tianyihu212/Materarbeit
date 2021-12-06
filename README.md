@@ -45,7 +45,8 @@ Using pre-trained model in GLD-v2 index dataset(10w) and test dataset(1000) extr
 <br/>
 Evaluate with mAP@100 on retrieval task as baseline. <br/>
 <br/>
-Problem : The GLD-v2 data set cannot be used to retrieve most similar landmarks without training models. Only the features learned on the IMAGE-NET dataset can be retrieved.
+Problem : The GLD-v2 data set cannot be used to retrieve most similar landmarks without training models. Only the features learned on the IMAGE-NET dataset can be retrieved. <br/>
+![Aaron Swartz](https://github.com/Tianyihu212/Materarbeit/blob/main/E1_framwork.png)
 ### Experiment 2
 Transfer learning EfficientNet B0 from ImageNet to GLDV2 dataset with classification top, use conv layer as feature extractor, evaluate with mAP@100 on retrieval task. <br/>
 <br/>
