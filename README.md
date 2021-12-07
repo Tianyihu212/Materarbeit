@@ -39,7 +39,7 @@ If you don't have a GPU, you can simply [train](https://github.com/Tianyihu212/M
 ## Train
 In my training process. I will compare the result of 4 experiments from Transfer learning.
 <br/>
-### Experiment 1
+### [Experiment 1](https://github.com/Tianyihu212/Materarbeit/tree/main/E1)
 Pre-trained EfficientNet B0 as feature extractor. <br/>
 <br/>
 Using pre-trained model in GLD-v2 index dataset(10w) and test dataset(1000) extracted global features from the two datasets. <br/>
@@ -50,7 +50,7 @@ Evaluate with mAP@100 on retrieval task as baseline. <br/>
 For example: The architecture of the horse in the dataset can be found. <br/>
 ![Aaron Swartz](https://github.com/Tianyihu212/Materarbeit/blob/main/E1_framwork.png)
 <br/>
-### Experiment 2
+### [Experiment 2](https://github.com/Tianyihu212/Materarbeit/tree/main/E2)
 Transfer learning EfficientNet B0 from ImageNet to GLDV2 dataset with classification top, use conv layer as feature extractor, evaluate with mAP@100 on retrieval task. <br/>
 <br/>
 Finetured the Efficient model from GLD-v2 dataset. <br/>
@@ -61,12 +61,12 @@ In this way, the model is more suitable for the GLD-v2 data set. <br/>
 <br/>
 ![Aaron Swartz](https://github.com/Tianyihu212/Materarbeit/blob/main/E2_framework.png)
 <br/>
-### Experiment 3
+### [Experiment 3](https://github.com/Tianyihu212/Materarbeit/tree/main/E3)
 Siamese network (metric learning) with batch-wise pos/negative mining (all possible pairs within a batch), transfered weights from pre-trianed weights on Image Net, contrastive loss, evaluate with mAP@100 on retrieval task.<br/>
 <br/>
 ![Aaron Swartz](https://github.com/Tianyihu212/Materarbeit/blob/main/E3_framwork.png)
 <br/>
-### Experiment 4
+### [Experiment 4](https://github.com/Tianyihu212/Materarbeit/tree/main/E4)
 Siamese network (metric learning) with batch-wise pos/negative mining (all possible pairs within a batch), transfered weights from experiment 2 on GLD-v2 dataset, contrastive loss, evaluate with mAP@100 on retrieval task.<br/>
 <br/>
 ![Aaron Swartz](https://github.com/Tianyihu212/Materarbeit/blob/main/E4_framework.png)
