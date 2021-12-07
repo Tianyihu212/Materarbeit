@@ -36,6 +36,8 @@ If you don't have a GPU, you can simply [train](https://github.com/Tianyihu212/M
 
 ## Quickstart
 
+## Dataset
+
 ## Train
 In my training process. I will compare the result of 4 experiments from Transfer learning.
 <br/>
@@ -71,3 +73,14 @@ Siamese network (metric learning) with batch-wise pos/negative mining (all possi
 <br/>
 ![Aaron Swartz](https://github.com/Tianyihu212/Materarbeit/blob/main/E4_framework.png)
 
+
+
+## Evaluate
+Evaluate with these index dataset (10w) and test dataset (1000) map@100 results:
+```
+map@100
+E1 : private 11.5% / public 8.08% 
+E2 : private 34.93% / public 27.13% 
+E3 : private 30.60% / public 23.59% 
+E4 : private 36.36% / public 31.16% 
+```
