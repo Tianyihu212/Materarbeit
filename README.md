@@ -37,6 +37,12 @@ If you don't have a GPU, you can simply [train](https://github.com/Tianyihu212/M
 ## Quickstart
 
 ## Dataset
+Trian dataset 117843 images. <br/>
+<br/>
+Test dataset 1000 images. (sampling from test dataset) <br/>
+<br/>
+Index dataset 100000 images. (sampling from training dataset not use im training process)<br/>
+<br/>
 
 ## Train
 In my training process. I will compare the result of 4 experiments from Transfer learning.
