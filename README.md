@@ -66,6 +66,10 @@ Finetured the Efficient model from GLD-v2 dataset. <br/>
 In this way, the model is more suitable for the GLD-v2 data set. <br/>
 <br/>
 **Problem**: Train network will overfitting. Because the GLD-v2 dataset has 81313 categories but a few images per category. <br/>
+The number of samples in the classification task is very small compared to the number of classes. 
+When a network is complex enough then it only needs to simply "remember" the labels of all samples, 
+so that a very small training error can be achieved. 
+However, the classifier achieved in this way has almost no generalization.
 <br/>
 ![Aaron Swartz](https://github.com/Tianyihu212/Materarbeit/blob/main/E2_framework.png)
 <br/>
