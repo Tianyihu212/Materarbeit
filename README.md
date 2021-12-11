@@ -76,6 +76,8 @@ However, the classifier achieved in this way has almost no generalization.
 ### [Experiment 3](https://github.com/Tianyihu212/Materarbeit/tree/main/E3)
 Siamese network (metric learning) with batch-wise pos/negative mining (all possible pairs within a batch), transfered weights from pre-trianed weights on Image Net, contrastive loss, evaluate with mAP@100 on retrieval task.<br/>
 <br/>
+**Problem**:No fine-tuning for the structural characteristics of the GLD-v2 data set
+<br/>
 ![Aaron Swartz](https://github.com/Tianyihu212/Materarbeit/blob/main/E3_framwork.png)
 <br/>
 ### [Experiment 4](https://github.com/Tianyihu212/Materarbeit/tree/main/E4)
