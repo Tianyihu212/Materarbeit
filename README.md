@@ -1,7 +1,7 @@
-# Demo
+# Masterthesis 
+## Demo
 ![image](https://github.com/Tianyihu212/Materarbeit/blob/main/example.gif)
 <br/>
-# Masterthesis 
 ## Content-Based Landmark Retrieval Combining Global and Local Features using Siamese Neural Networks
 
 This paper mainly introduces the use of GLD-v2 dataset for landmark retrieval tasks. This paper uses [Google landmark dataset](https://github.com/cvdfoundation/google-landmark) for image retrieval. The method used is to combine the global and local features of images.<br/>
