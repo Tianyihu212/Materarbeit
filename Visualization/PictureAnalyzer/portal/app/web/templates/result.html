@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="utf-8">
+    <title>Landmark Retrieval</title>
+    <script src="static/js/jquery-3.6.0.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <style>html, body {height: 100%;}</style>
+    <link href="static/css/app.css" rel="stylesheet">
+</head>
+<body data-click='{&quot;sign&quot;:&quot;121f07a255ff0b89fef0a01639200337&quot;,&quot;irKey&quot;:&quot;IR-121f07a2-55ff-0b89-fef0-a01639200337&quot;,&quot;tn&quot;:&quot;pc&quot;,&quot;sid&quot;:null,&quot;sids&quot;:&quot;10006_10521_10919_10913_11006_10924_10905_10016_10901_10942_10907_11012_10971_10968_10974_11032_17850_17071_18009_18101_17201_17202_18301_18313_19300_19199_19162_19220_19217_19230_19268_19280_19550_19560_19660_19670_19771_19796_19800_19807_19810_10000&quot;,&quot;sdt&quot;:null,&quot;baiduid&quot;:&quot;3DCD6E41AA774756BE9CDC549D355642:FG=1&quot;,&quot;uid&quot;:0,&quot;ct&quot;:1,&quot;av&quot;:false,&quot;logid&quot;:&quot;2606911626&quot;,&quot;srcp&quot;:&quot;&quot;,&quot;rtime&quot;:1639205079673,&quot;category&quot;:&quot;general&quot;,&quot;entrance&quot;:&quot;general&quot;}'>
+	<div id="app">
+        <div class="card-page">
+            <div data-v-119065c9="" data-v-058f75f2="" data-click="{&quot;cid&quot;:&quot;G567&quot;,&quot;tname&quot;:&quot;cardHeader&quot;}" cid="G567" class="graph-result-card">
+                <div data-v-058f75f2="" data-v-119065c9="" class="graph-header">
+                    <div data-v-59efe4f3="" data-v-058f75f2="" class="graph-header-info" data-v-119065c9="">
+                        <div data-v-59efe4f3="" class="graph-header-top">
+                            <div data-v-59efe4f3="" class="graph-container">
+                                <div data-v-2cc0dc98="" data-v-59efe4f3="" class="graph-d20-search graph-d20-search-result">
+                                    <span data-v-2cc0dc98="" class="graph-d20-search-wrapper graph-d20-search-wrapper-result">
+                                        <input data-v-2cc0dc98="" id="imgUrl" placeholder="Paste image URL"
+                                               class="graph-d20-search-wrapper-input graph-d20-search-wrapper-input-result">
+                                        <span data-v-2cc0dc98="" class="graph-d20-search-wrapper-camera graph-d20-search-wrapper-camera-result" onclick="openFile()"></span>
+                                        <!---->
+                                        <span data-v-2cc0dc98="" class="graph-d20-search-wrapper-camera-title">Upload an image</span>
+                                    </span>
+                                    <span data-v-2cc0dc98="" class="graph-d20-search-btn graph-d20-search-btn-result" onclick="sendUrl()">Search</span>
+                                    <div data-v-2cc0dc98="" id="i1" class="graph-d20-search-layer" style="display: none;">
+                                        <p data-v-2cc0dc98="" id="i2" class="graph-d20-search-layer-loading" style="display: none;">
+                                            <span data-v-2cc0dc98="">Uploading...</span>
+                                        </p>
+                                        <div data-v-2cc0dc98="" id="i3" class="graph-d20-search-layer-error" style="display: none;">
+                                            <p data-v-2cc0dc98="">
+                                                <span data-v-2cc0dc98="" class="graph-d20-search-layer-error-text">
+                                                    <span data-v-2cc0dc98="">Failed to upload image, please try again</span>
+                                                </span>
+                                            </p>
+                                            <div data-v-2cc0dc98="" class="graph-d20-search-layer-error-format">Only supports pictures in jpg, jpeg, png formats below 10M</div>
+                                        </div>
+                                        <div data-v-2cc0dc98="" id="i4" class="graph-d20-search-layer-contain" style="display: none;">
+                                            <div data-v-2cc0dc98="" class="graph-d20-search-layer-drag" ondrop="dropImg()">Drag an image here</div>
+                                            <div data-v-2cc0dc98="" class="graph-d20-search-layer-choose">
+                                                <span data-v-2cc0dc98="">Choose file</span>
+                                                <div data-v-697bd736="" data-v-2cc0dc98="" class="general-upload graph-d20-search-layer-upload">
+                                                    <form data-v-697bd736="" id="formData" class="general-upload-imgform" enctype="multipart/form-data">
+                                                        <input data-v-697bd736="" id="imgFile" name="file" type="file" accept="image/*" autocomplete="off"
+                                                               class="general-upload-file" onchange="chooseImg()">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <i data-v-2cc0dc98="" class="graph-d20-search-layer-close" onclick="closeFile()"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-v-058f75f2="" data-v-119065c9="" class="graph-header-bottom">
+                        <div data-v-058f75f2="" data-v-119065c9="" class="graph-container">
+                            <div data-v-058f75f2="" data-v-119065c9="" class="graph-guess">
+                                <div data-v-058f75f2="" data-v-119065c9="" class="graph-thumb-img">
+                                    <!---->
+                                    <span data-v-058f75f2="" data-v-119065c9="" style="background-image: url(&quot;{{ srcFile }}&quot;);"></span>
+                                    <img data-v-058f75f2="" data-v-119065c9="" src="{{ srcFile }}" class="graph-img-opacity">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% if not dstFiles %}
+                <div data-v-119065c9="" data-v-e21f4b86="" data-click="{&quot;cid&quot;:&quot;G573&quot;,&quot;tname&quot;:&quot;simipic&quot;}" cid="G573" class="graph-result-card">
+                    <div data-v-e21f4b86="" data-v-119065c9="" class="graph-similar graph-container">
+                        <div data-v-60845390="" data-v-e21f4b86="" class="general-title-cont" data-v-119065c9="" style="min-width: 298px;">
+                            <div data-v-60845390="" class="general-title">No results :(</div>
+                            <ul data-v-60845390="" class="general-typelist"></ul>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+
+            {% for dstFile in dstFiles %}
+                <div data-v-119065c9="" data-v-e21f4b86="" data-click="{&quot;cid&quot;:&quot;G573&quot;,&quot;tname&quot;:&quot;simipic&quot;}" cid="G573" class="graph-result-card">
+                    <div data-v-e21f4b86="" data-v-119065c9="" class="graph-similar graph-container">
+                        <div data-v-60845390="" data-v-e21f4b86="" class="general-title-cont" data-v-119065c9="" style="min-width: 298px;">
+                            <div data-v-60845390="" class="general-title">result</div>
+                            <ul data-v-60845390="" class="general-typelist"></ul>
+                        </div>
+
+                        {% if not dstFile %}
+                            <div data-v-e21f4b86="" data-v-119065c9="" class="graph-similar-list-bottom">
+                                <div data-v-e21f4b86="" data-v-119065c9="" class="graph-similar-list-bottom-status">No results :(</div>
+                            </div>
+                        {% else %}
+                            <div data-v-e21f4b86="" data-v-119065c9="" class="graph-similar-list">
+                                <div data-v-8e78a164="" data-v-e21f4b86="" class="general-waterfall" more-url="" data-v-119065c9="">
+
+                                    {% for dst in dstFile %}
+                                        <div data-v-8e78a164="" class="general-imgcol" style="width: 280px;">
+                                            <a data-v-8e78a164="" target="_blank" data-index="0" class="general-imgcol-item">
+                                                <span data-v-8e78a164="" data-click="{&quot;bt&quot;: &quot;b-img&quot;}" class="general-imgcol-item-bg graph-imgbg-fff"></span>
+                                                <img data-v-8e78a164="" src="{{ dst }}" style="border: 1px solid rgba(0, 0, 0, 0.05);">
+                                            </a>
+                                        </div>
+                                    {% endfor %}
+
+                                </div>
+                            </div>
+                        {% endif %}
+
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+    </div>
+
+</body>
+</html>

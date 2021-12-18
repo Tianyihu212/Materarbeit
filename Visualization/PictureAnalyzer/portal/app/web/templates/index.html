@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="utf-8">
+    <title>Landmark retrieval</title>
+    <script src="static/js/jquery-3.6.0.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <style>html, body {height: 100%;}</style>
+    <link href="static/css/app.css" rel="stylesheet">
+</head>
+<body data-click='{&quot;logid&quot;:3709929683,&quot;cuid&quot;:&quot;&quot;,&quot;baiduid&quot;:&quot;4E19E0F1DA7B993E00B1DC1520756972:FG=1&quot;,&quot;uid&quot;:0,&quot;sign&quot;:&quot;&quot;,&quot;tn&quot;:&quot;wise&quot;,&quot;ct&quot;:1,&quot;av&quot;:false,&quot;rtime&quot;:1639103993638,&quot;cid&quot;:&quot;G656&quot;,&quot;tname&quot;:&quot;index&quot;,&quot;category&quot;:&quot;midpage_pchome&quot;,&quot;entrance&quot;:&quot;general&quot;,&quot;pro_n&quot;:&quot;&quot;,&quot;srcp&quot;:&quot;&quot;,&quot;sids&quot;:&quot;10007_10520_10019_10913_11006_10924_10905_10018_10901_10942_10907_11012_10971_10968_10973_11032_17851_17071_18003_18100_17200_17202_18300_18313_19300_19199_19162_19220_19219_19230_19268_19281_19550_19560_19660_19670_19771_19798_19800_19807_10000&quot;}'>
+    
+	<div id="app">
+        <div data-v-da07a85a="" class="page-index">
+            <div data-v-da07a85a="" class="page-banner">
+                <div data-v-da07a85a="" class="page-search">
+                    <div data-v-2cc0dc98="" data-v-da07a85a="" class="graph-d20-search">
+                        <span data-v-2cc0dc98="" class="graph-d20-search-wrapper">
+                            <input data-v-2cc0dc98="" id="imgUrl" placeholder="Paste image URL" class="graph-d20-search-wrapper-input">
+                            <span data-v-2cc0dc98="" class="graph-d20-search-wrapper-camera" onclick="openFile()"></span>
+                            <!---->
+                            <span data-v-2cc0dc98="" class="graph-d20-search-wrapper-camera-title">Upload an image</span>
+                        </span>
+                        <span data-v-2cc0dc98="" class="graph-d20-search-btn" onclick="sendUrl()">Search</span>
+                        <div data-v-2cc0dc98="" id="i1" class="graph-d20-search-layer" style="display: none;">
+                            <p data-v-2cc0dc98="" id="i2" class="graph-d20-search-layer-loading" style="display: none;">
+                                <span data-v-2cc0dc98="">Uploading...</span>
+                            </p>
+                            <div data-v-2cc0dc98="" id="i3" class="graph-d20-search-layer-error" style="display: none;">
+                                <p data-v-2cc0dc98="">
+                                    <span data-v-2cc0dc98="" class="graph-d20-search-layer-error-text">
+                                        <span data-v-2cc0dc98="">Failed to upload image, please try again</span>
+                                    </span>
+                                </p>
+                                <div data-v-2cc0dc98="" class="graph-d20-search-layer-error-format">
+                                    Only supports pictures in jpg, jpeg, png formats below 10M
+                                </div>
+                            </div>
+                            <div data-v-2cc0dc98="" id="i4" class="graph-d20-search-layer-contain" style="display: none;">
+                                <div data-v-2cc0dc98="" class="graph-d20-search-layer-drag" ondrop="dropImg()">Drag an image here</div>
+                                <div data-v-2cc0dc98="" class="graph-d20-search-layer-choose">
+                                    <span data-v-2cc0dc98="">Choose file</span>
+                                    <div data-v-697bd736="" data-v-2cc0dc98="" class="general-upload graph-d20-search-layer-upload">
+                                        <form data-v-697bd736="" id="formData" class="general-upload-imgform" enctype="multipart/form-data">
+                                            <input data-v-697bd736="" id="imgFile" name="file" type="file" accept="image/*" autocomplete="off" class="general-upload-file" onchange="chooseImg()">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <i data-v-2cc0dc98="" class="graph-d20-search-layer-close" onclick="closeFile()"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div data-v-da07a85a="" class="page-recom">
+                <div data-v-da07a85a="" class="page-recom-cont" style="text-align:center;">
+
+                    <div data-v-8e78a164="" class="general-imgcol" style="width: 280px;">
+                        <a data-v-8e78a164="" target="_blank" data-index="0" class="general-imgcol-item">
+                            <span data-v-8e78a164="" data-click="{&quot;bt&quot;: &quot;b-img&quot;}" class="general-imgcol-item-bg graph-imgbg-fff"></span>
+                            <img data-v-8e78a164="" src="static/img/Tu_berlin_new.png" style="border: 1px solid rgba(0, 0, 0, 0.05);">
+                        </a>
+                    </div>
+
+                    <div data-v-8e78a164="" class="general-imgcol" style="width: 280px;">
+                        <a data-v-8e78a164="" target="_blank" data-index="0" class="general-imgcol-item">
+                            <span data-v-8e78a164="" data-click="{&quot;bt&quot;: &quot;b-img&quot;}" class="general-imgcol-item-bg graph-imgbg-fff"></span>
+                            <img data-v-8e78a164="" src="static/img/cv_new.png" style="border: 1px solid rgba(0, 0, 0, 0.05);">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
