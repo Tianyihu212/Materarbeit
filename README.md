@@ -17,7 +17,7 @@ The research points of this paper are divided into 4 points in total:<br/>
 RQ1 I downloaded the data set of the [Google landmark dataset](https://github.com/cvdfoundation/google-landmark), and deeply analyzed the number of noise images in the data set, the gray-scale images in the data set, the number of images in each category, the shooting time of each image, exif information, etc. In-depth analysis. The relevant code is in the [data preprocess folder](https://github.com/Tianyihu212/Materarbeit/tree/main/data%20preprocess). <br/>
 <br/>
 RQ2 see figure <br/>
-![Aaron Swartz](https://github.com/Tianyihu212/Materarbeit/raw/main/framework.png)
+![Aaron Swartz](https://github.com/Tianyihu212/Materarbeit/blob/main/framework.jpg)
 ```
 Overview of the framework pipeline:
 1. Ranking uses global feature from query image and document image. 
