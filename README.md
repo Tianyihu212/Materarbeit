@@ -95,8 +95,8 @@ Siamese network (metric learning) with batch-wise pos/negative mining (all possi
 Evaluate with these index dataset (10w) and test dataset (1000) map@100 results:
 ```
 map@100
-E1 : private 11.5% / public 8.08% 
-E2 : private 34.93% / public 27.13% 
-E3 : private 30.60% / public 23.59% 
-E4 : private 36.36% / public 31.16% 
+E1 : private 8.23% / public 7.42% 
+E2 : private 25.43% / public 25.59% 
+E3 : private 31.4% / public 31.68% 
+E4 : private 32.57% / public 32.68% 
 ```
