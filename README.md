@@ -34,6 +34,7 @@ Overview of the framework pipeline:
 * [Models](#models)
 * [Train](#train)
 * [Evaluate](#evaluate)
+* [Folder Structure](#file-structure)
 
 ## Installation
 If you don't have a GPU, you can simply [train](https://github.com/Tianyihu212/Materarbeit/raw/main/train_model_code/latest_ipynb_load_renew.py) the small landmark dataset([Oxford5k](https://paperswithcode.com/dataset/oxford5k) order [Paris6k](https://paperswithcode.com/sota/image-retrieval-on-paris6k) data set) model through colab order jupyter notbook.
@@ -100,3 +101,24 @@ E2 : private 25.43% / public 25.59%
 E3 : private 31.4% / public 31.68% 
 E4 : private 32.57% / public 32.68% 
 ```
+
+## Folder Structure
+    .
+    ├── data                          # Files for FinBERT-QA
+    |   └── ...                       
+    ├── notebooks                     # Jupyter notebooks
+    │   ├── Process_Data.ipynb        # Loads, cleans, and processes data
+    │   └── Retriever_Analysis.ipynb  # Evaluates and analyzes the results from the retriever
+    ├── retriever                     # Files for the retriever
+    |   └── ... 
+    ├── src                           # Source files
+    │   ├── evaluate.py               # Evaluation metrics - nDCG@k, MRR@k, Precision@k
+    │   ├── evaluate_models.py        # Configures evaluation parameters
+    |   ├── finbert_qa.py             # Creates pre-trained BERT model, fine-tunes, evaluates, and makes predictions
+    |   ├── generate_data.py          # Generates train, validation, and test sets using the retriever
+    |   ├── predict.py                # Configures prediction parameters
+    |   ├── process_data.py           # Functions to process data, create vocabulary, and tokenizers for the QA-LSTM model
+    |   ├── qa_lstm.py                # Creates, trains, and evaluates a QA-LSTM model
+    |   ├── train_models.py           # Configures training parameters
+    │   └── utils.py                  # Helper functions
+    └── ...
