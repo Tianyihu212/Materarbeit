@@ -104,11 +104,18 @@ E4 : private 32.57% / public 32.68%
 
 ## Folder Structure
     .
-    ├── data                          # Files for FinBERT-QA
-    |   └── ...                       
-    ├── notebooks                     # Jupyter notebooks
-    │   ├── Process_Data.ipynb        # Loads, cleans, and processes data
-    │   └── Retriever_Analysis.ipynb  # Evaluates and analyzes the results from the retriever
+    ├── E1                          # Experiment 1 
+    |   └── E1_index.ipynb          # Use Efficient Net B0 pre trained model extract global feature
+    |   └── E1_query.ipynb          # Calculate mAP@100
+    ├── E2                          # Experiment 2
+    │   ├── E2_index.ipynb          # Use transfer learning fineturning Efficient Net B0 extract global feature
+    │   └── E2_query.ipynb          # Calculate mAP@100
+    ├── E3                          # Experiment 3
+    │   ├── E3_index.ipynb          # Use metric learning fineturning experiment 1 extract global feature
+    │   └── E3_query.ipynb          # Calculate mAP@100
+    ├── E4                          # Experiment 4
+    │   ├── E4_index.ipynb          # Use metric learning fineturning experiment 2 extract global feature
+    │   └── E4_query.ipynb          # Calculate mAP@100
     ├── retriever                     # Files for the retriever
     |   └── ... 
     ├── src                           # Source files
