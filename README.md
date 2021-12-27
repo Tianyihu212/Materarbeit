@@ -116,16 +116,16 @@ E4 : private 32.57% / public 32.68%
     ├── E4                          # Experiment 4
     │   ├── E4_index.ipynb          # Use metric learning fineturning experiment 2 extract global feature
     │   └── E4_query.ipynb          # Calculate mAP@100
-    ├── retriever                     # Files for the retriever
-    |   └── ... 
-    ├── src                           # Source files
-    │   ├── evaluate.py               # Evaluation metrics - nDCG@k, MRR@k, Precision@k
-    │   ├── evaluate_models.py        # Configures evaluation parameters
-    |   ├── finbert_qa.py             # Creates pre-trained BERT model, fine-tunes, evaluates, and makes predictions
-    |   ├── generate_data.py          # Generates train, validation, and test sets using the retriever
-    |   ├── predict.py                # Configures prediction parameters
-    |   ├── process_data.py           # Functions to process data, create vocabulary, and tokenizers for the QA-LSTM model
-    |   ├── qa_lstm.py                # Creates, trains, and evaluates a QA-LSTM model
-    |   ├── train_models.py           # Configures training parameters
-    │   └── utils.py                  # Helper functions
-    └── ...
+    ├── Evaluation                  # Calculate mAP@100 method
+    |   └── map@100_demo.py         # map@100_demo.py methode
+    ├── ResNet                      # Control experiment 
+    |   └── ResNet_18               # ResNet_18 in image retrieval result
+    |   └── ResNet_50               # ResNet_50 in image retrieval result
+    ├── Visualization    
+    |   └── ...
+    ├── data preprocess             # see README.md
+    |   └── ...
+    ├── local_feature  
+    |   └── SIFT                    # SIFT feature
+    ├── paper  
+    |   └── ...
