@@ -125,7 +125,7 @@ E4 : private 32.57% / public 32.68%
     |   └── ...
     ├── data preprocess             # see README.md
     |   └── ...
-    ├── local_feature  
-    |   └── SIFT                    # SIFT feature
+    ├── local_feature               # local feature re-ranking
+    |   └── SIFT                    # SIFT feature re-ranking
     ├── paper  
     |   └── ...
