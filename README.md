@@ -112,7 +112,7 @@ Evaluate with these index dataset (10w) and test dataset (1000) map@100 results:
 map@100
 E1 : private 8.23% / public 7.42% 
 E2 : private 25.43% / public 25.59% 
-E3 : private 31.4% / public 31.68% 
+E3 : private 31.49% / public 31.68% 
 E4 : private 32.57% / public 32.68% 
 ```
 
