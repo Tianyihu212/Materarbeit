@@ -18,6 +18,20 @@ RQ1 I downloaded the data set of the [Google landmark dataset](https://github.co
 <br/>
 RQ2 see figure <br/>
 ![Aaron Swartz](https://github.com/Tianyihu212/Materarbeit/blob/main/framework.jpg)
+<br/>
+RQ3 I try to make different local feature methode to do re-ranking on experiment 4. Based on the global feature score of the image, the local feature result is fused to obtain the global + local score. Finally calculate the map@100 of the retrieval result. <br/>
+<br/>
+In this project, I compared the local feature methods of SIFT, VLAD and Efficient Net local, which improved the retrieval results of our experiment 4. (see E5, E6 and E7)
+<br/>
+|  Method   | Private  | Public |
+|  ----  | ----  | ---  |
+| Ours(global)  | 32.57% |  32.68% |
+| Ours(glocal + SIFT)  | 32.61% | 32.71% |
+| Ours(glocal + VLAD)  | 30.91% | 30.58% |
+| Ours(glocal + Efficient Net local)  | 33.09% | 32.84% |<br/>
+<br/>
+RQ4 I fused the local features into the inital ranking result for the re-ranking. When i calcuate the similarity of query image and document image, the final score is global feature result*v + global feature result*(1-v). According to the fused result i can get the map@100 result.
+
 ```
 Overview of the framework pipeline:
 1. Ranking uses global feature from query image and document image. 
