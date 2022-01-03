@@ -10,7 +10,7 @@ This paper mainly introduces the use of GLD-v2 dataset for landmark retrieval ta
 The research points of this paper are divided into 4 points in total:<br/>
 <br/>
 (1) What is the characteristics of the Landmark Retrieval data set? <br/>
-(2) How to better design a Landmark Retrieval system on top of a large-scaled noisy data set? <br/>
+(2) How to better design a Landmark Retrieval system on top of a Landmark data set? <br/>
 (3) Which local feature is suitable for codebook Construction? <br/>
 (4) How to incorporate local Features and global Features for landmark re-ranking? <br/>
 <br/>
