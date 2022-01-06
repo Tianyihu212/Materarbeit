@@ -104,13 +104,13 @@ Siamese network (metric learning) with batch-wise pos/negative mining (all possi
 <br/>
 ![Aaron Swartz](https://github.com/Tianyihu212/Materarbeit/blob/main/E4_framework.png)
 <br/>
-### [Experiment 4](https://github.com/Tianyihu212/Materarbeit/tree/main/E5)
+### [Experiment 5](https://github.com/Tianyihu212/Materarbeit/tree/main/E5)
 Based on Experiment 4 use SIFT algorithm to re-ranking the global feature ranking result.
 <br/>
-### [Experiment 4](https://github.com/Tianyihu212/Materarbeit/tree/main/E6)
+### [Experiment 6](https://github.com/Tianyihu212/Materarbeit/tree/main/E6)
 Based on Experiment 4 use VLAD algorithm to re-ranking the global feature ranking result.
 <br/>
-### [Experiment 4](https://github.com/Tianyihu212/Materarbeit/tree/main/E6)
+### [Experiment 7](https://github.com/Tianyihu212/Materarbeit/tree/main/E6)
 Based on Experiment 4 use Efficient Net local feature algorithm to re-ranking the global feature ranking result.
 
 ## Evaluate
