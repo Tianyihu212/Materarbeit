@@ -26,9 +26,9 @@ In this project, I compared the local feature methods of SIFT, VLAD and Efficien
 |  Method   | Private  | Public |
 |  ----  | ----  | ---  |
 | Ours(global)  | 32.57% |  32.68% |
-| Ours(glocal + SIFT)  | 32.61% | 32.71% |
-| Ours(glocal + VLAD)  | 30.91% | 30.58% |
-| Ours(glocal + Efficient Net local)  | 33.09% | 32.84% |<br/>
+| Ours(glocal + SIFT)(E5)  | 32.61% | 32.71% |
+| Ours(glocal + VLAD)(E6)  | 30.91% | 30.58% |
+| Ours(glocal + Efficient Net local)(E7)  | 33.09% | 32.84% |<br/>
 <br/>
 RQ4 I fused the local features into the inital ranking result for the re-ranking. When i calcuate the similarity of query image and document image, the final score is global feature result*v + global feature result*(1-v). According to the fused result i can get the map@100 result.
 
