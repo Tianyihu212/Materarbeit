@@ -103,8 +103,15 @@ Siamese network (metric learning) with batch-wise pos/negative mining (all possi
 Siamese network (metric learning) with batch-wise pos/negative mining (all possible pairs within a batch), transfered weights from experiment 2 on GLD-v2 dataset, contrastive loss, evaluate with mAP@100 on retrieval task.<br/>
 <br/>
 ![Aaron Swartz](https://github.com/Tianyihu212/Materarbeit/blob/main/E4_framework.png)
-
-
+<br/>
+### [Experiment 4](https://github.com/Tianyihu212/Materarbeit/tree/main/E5)
+Based on Experiment 4 use SIFT algorithm to re-ranking the global feature ranking result.
+<br/>
+### [Experiment 4](https://github.com/Tianyihu212/Materarbeit/tree/main/E6)
+Based on Experiment 4 use VLAD algorithm to re-ranking the global feature ranking result.
+<br/>
+### [Experiment 4](https://github.com/Tianyihu212/Materarbeit/tree/main/E6)
+Based on Experiment 4 use Efficient Net local feature algorithm to re-ranking the global feature ranking result.
 
 ## Evaluate
 Evaluate with these index dataset (10w) and test dataset (1000) map@100 results:
