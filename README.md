@@ -43,7 +43,6 @@ Overview of the framework pipeline:
 ```
 ## Contents
 * [Installation](#installation)
-* [Quickstart](#quickstart)
 * [Dataset](#dataset)
 * [Models](#models)
 * [Train](#train)
@@ -53,7 +52,6 @@ Overview of the framework pipeline:
 ## Installation
 If you don't have a GPU, you can simply [train](https://github.com/Tianyihu212/Materarbeit/raw/main/train_model_code/latest_ipynb_load_renew.py) the small landmark dataset([Oxford5k](https://paperswithcode.com/dataset/oxford5k) order [Paris6k](https://paperswithcode.com/sota/image-retrieval-on-paris6k) data set) model through colab order jupyter notbook.
 
-## Quickstart
 
 ## Dataset
 Trian dataset 1,117,843 images. <br/>
@@ -66,6 +64,7 @@ Index dataset 100,000 images. (sampling from training dataset not use im trainin
 ## Train
 In my training process. I will compare the result of 4 experiments from Transfer learning.
 <br/>
+
 ### [Experiment 1](https://github.com/Tianyihu212/Materarbeit/tree/main/E1)
 Pre-trained EfficientNet B0 as feature extractor. <br/>
 <br/>
@@ -92,6 +91,21 @@ However, the classifier achieved in this way has almost no generalization.
 <br/>
 ![Aaron Swartz](https://github.com/Tianyihu212/Materarbeit/blob/main/E2_framework.png)
 <br/>
+#### `E2/train_e2.py`: trains and fine-tunes model
+```
+python3 E2/train_e2.py      --batch-size 144 
+                            --num-workers 12 \
+                            --trial 0 \
+                            --model 'efficientnet_b0' \
+                            --lr 1.5e-4 \
+                            --opt_eps 1e-8 \
+                            --output_dir './output_e2' \
+                            --start_epoch 0 \
+                            --epochs 20 \
+                            --resume False \
+                            --model_path 'output/checkpoint_2.pth'
+```
+
 ### [Experiment 3](https://github.com/Tianyihu212/Materarbeit/tree/main/E3)
 Siamese network (metric learning) with batch-wise pos/negative mining (all possible pairs within a batch), transfered weights from pre-trianed weights on Image Net, contrastive loss, evaluate with mAP@100 on retrieval task.<br/>
 <br/>
@@ -99,11 +113,39 @@ Siamese network (metric learning) with batch-wise pos/negative mining (all possi
 <br/>
 ![Aaron Swartz](https://github.com/Tianyihu212/Materarbeit/blob/main/E3_framwork.png)
 <br/>
+#### `E3/train_e3.py`: trains and fine-tunes model
+```
+python3 E3/train_e3.py      --batch-size 8 
+                            --num-workers 4 \
+                            --trial 0 \
+                            --model 'efficientnet_b0' \
+                            --lr 1.5e-4 \
+                            --opt_eps 1e-8 \
+                            --output_dir './output_e3' \
+                            --start_epoch 0 \
+                            --epochs 20 \
+                            --resume False \
+                            --model_path 'output/checkpoint_3.pth'
+```
 ### [Experiment 4](https://github.com/Tianyihu212/Materarbeit/tree/main/E4)
 Siamese network (metric learning) with batch-wise pos/negative mining (all possible pairs within a batch), transfered weights from experiment 2 on GLD-v2 dataset, contrastive loss, evaluate with mAP@100 on retrieval task.<br/>
 <br/>
 ![Aaron Swartz](https://github.com/Tianyihu212/Materarbeit/blob/main/E4_framework.png)
 <br/>
+#### `E4/train_e4.py`: trains and fine-tunes model
+```
+python3 E4/train_e4.py      --batch-size 16 
+                            --num-workers 4 \
+                            --trial 0 \
+                            --model 'efficientnet_b0' \
+                            --lr 1.5e-4 \
+                            --opt_eps 1e-8 \
+                            --output_dir './output_e4' \
+                            --start_epoch 0 \
+                            --epochs 20 \
+                            --resume False \
+                            --model_path 'output/checkpoint_4.pth'
+```
 ### [Experiment 5](https://github.com/Tianyihu212/Materarbeit/tree/main/E5)
 Based on Experiment 4 use SIFT algorithm to re-ranking the global feature ranking result.
 <br/>
@@ -112,6 +154,8 @@ Based on Experiment 4 use VLAD algorithm to re-ranking the global feature rankin
 <br/>
 ### [Experiment 7](https://github.com/Tianyihu212/Materarbeit/tree/main/E7)
 Based on Experiment 4 use Efficient Net local feature algorithm to re-ranking the global feature ranking result.
+
+
 
 ## Evaluate
 Evaluate with these index dataset (10w) and test dataset (1000) map@100 results:
@@ -124,6 +168,13 @@ E4 : private 32.57% / public 32.68%
 E5 : private 32.61% / public 32.71%
 E6 : private 30.91% / public 30.58%
 E7 : private 33.09% / public 32.84% 
+```
+
+```
+E1/E1_index.ipynb  # Used to extract the embedding of the index images and query images, and save it in the local directory.
+E1/E1_query.ipynb  # Iterate all index embeddings to find the k most similar images and visualize them.
+
+E1 - E7 use similar code like E1/E1_index.ipynb and E1/E1_query.ipynb.
 ```
 
 ## Folder Structure
