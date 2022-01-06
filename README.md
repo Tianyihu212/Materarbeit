@@ -110,7 +110,7 @@ Based on Experiment 4 use SIFT algorithm to re-ranking the global feature rankin
 ### [Experiment 6](https://github.com/Tianyihu212/Materarbeit/tree/main/E6)
 Based on Experiment 4 use VLAD algorithm to re-ranking the global feature ranking result.
 <br/>
-### [Experiment 7](https://github.com/Tianyihu212/Materarbeit/tree/main/E6)
+### [Experiment 7](https://github.com/Tianyihu212/Materarbeit/tree/main/E7)
 Based on Experiment 4 use Efficient Net local feature algorithm to re-ranking the global feature ranking result.
 
 ## Evaluate
@@ -121,6 +121,9 @@ E1 : private 8.23% / public 7.42%
 E2 : private 25.43% / public 25.59% 
 E3 : private 31.49% / public 31.68% 
 E4 : private 32.57% / public 32.68% 
+E5 : private 32.61% / public 32.71%
+E6 : private 30.91% / public 30.58%
+E7 : private 33.09% / public 32.84% 
 ```
 
 ## Folder Structure
