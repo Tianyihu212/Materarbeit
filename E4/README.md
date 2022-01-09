@@ -1,2 +1,1 @@
-Retrieval result:<br/>
-<br/>
+Fine turn E2 model use metric learning
