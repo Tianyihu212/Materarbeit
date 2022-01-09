@@ -1,1 +1,1 @@
-Fine turn E2 model use metric learning
+Fine-tuning E2 model use metric learning
