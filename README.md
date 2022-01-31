@@ -202,5 +202,6 @@ E1 - E7 use similar code like E1/E1_index.ipynb and E1/E1_query.ipynb.
     |   └── ...
     ├── local_feature               # local feature re-ranking
     |   └── SIFT                    # SIFT feature re-ranking
+    |   └── VLAD                    # VLAD feature re-ranking
     ├── paper  
     |   └── ...
