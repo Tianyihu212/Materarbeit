@@ -153,7 +153,7 @@ Based on Experiment 4 use SIFT algorithm to re-ranking the global feature rankin
 Based on Experiment 4 use VLAD algorithm to re-ranking the global feature ranking result.
 <br/>
 ### [Experiment 7](https://github.com/Tianyihu212/Materarbeit/tree/main/E7)
-Based on Experiment 4 use Efficient Net local feature algorithm to re-ranking the global feature ranking result.
+Based on Experiment 4 use Efficient Net local feature algorithm (named is patch retrieval) to re-ranking the global feature ranking result. 
 
 
 
