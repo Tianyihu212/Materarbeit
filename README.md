@@ -5,7 +5,7 @@
 <br/>
 ## Landmark Retrieval
 
-This paper mainly introduces the use of GLD-v2 dataset for landmark retrieval tasks. This paper uses [Google landmark dataset](https://github.com/cvdfoundation/google-landmark) for image retrieval. The method used is to combine the global and local features of images.<br/>
+This paper (https://arxiv.org/abs/2208.04201) mainly introduces the use of GLD-v2 dataset for landmark retrieval tasks. This paper uses [Google landmark dataset](https://github.com/cvdfoundation/google-landmark) for image retrieval. The method used is to combine the global and local features of images.<br/>
 <br/>
 The research points of this paper are divided into 4 points in total:<br/>
 <br/>
